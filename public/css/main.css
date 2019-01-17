@@ -1,0 +1,103 @@
+
+body, div, ul, li, h1, h2, h3, h4, p , a, img,hr{margin:0; padding:0;}
+body{font-size:14px; font-family: 'Yeon Sung', cursive; overflow-x:hidden; }
+.nor{font-size:14px; font-family: 'Nanum Gothic', sans-serif;}
+ul li{list-style:none;}
+a{text-decoration:none; display:block;}
+img{display:block; border:0;}
+
+body,html{height:100%;}
+h1{font-size:50px;}
+h2{font-size:40px;}
+h3{font-size:30px;}
+h4{font-size:25px;}
+
+/*첫번째*/
+.left{width:260px; height:100%; position:fixed; top:0; left:0;}
+.left .left-navi{float:left; width:190px; height:100%; background-color:#9ed15b; text-align:center;}
+.left-navi img{width:100%;}
+.left-navi .logobox{width:60px; height:80px; margin:0 auto; margin-bottom:20px;}
+.left-navi h3{color:#fff; font-size:30px; font-weight:normal; padding-bottom:25px; }
+.left-navi .navi{width:inherit; padding-bottom:350px;}
+.navi li{width:inherit; border-top:1px solid #327517; }
+.navi li:last-child{border-bottom:1px solid #327517;}
+.navi li a{color:#0e2d03; font-size:18px; padding:20px 0; }
+.navi li a.black{color:#000;}
+.navi li a .fa{color:#327517; font-size:15px; float:right; margin-right:10px;}
+
+
+.logo-bot{width:inherit; padding:0 10px; margin:0 auto;}
+.logo-bot a{width:160px; padding:10px 0;}
+.logo-bot .bot-way{ color:#000; background-color:#fff; margin-bottom:10px;}
+.logo-bot .bot-priv{color:#fff; border:1px solid #fff; box-sizing:border-box; margin-bottom:20px;}
+.logo-bot p{text-align:left; font-size:12px;}
+ 
+
+/*숫자*/
+   .left .left-number {
+       float: left;
+       width: 70px;
+       height: 100%;
+       background-color: #0e2d03;
+       color: #fff;
+   }
+.left-number .num-block{position:relative; width:100%; height:100%;  padding:10px 0;text-align:center; }
+.num-block img{padding-bottom:10px;}
+.out, .num-block img{display:inline-block;}
+.num-block .scroll{padding-bottom:50px;}
+.out{position:absolute; width:45px; height:45px; border:1px solid #fff; border-radius:50%; text-align:center;}
+.o-one{top:140px; right:11px;}
+.o-two{top:198px; right:11px;}
+.o-three{top:258px; right:11px;}
+.o-four{top:317px; right:11px;}
+.o-five{top:376px; right:11px;}
+
+.inn{width:35px; height:35px;border:1px dashed #fff; border-radius:50%; margin:4px auto 0;}
+.inn a{line-height:40px; font-size:25px; color:#fff;}
+.num-block .color{border:1px solid #96b418;}
+.num-block .colorin{border:1px dashed #96b418;}
+.num-block .colorin a{color:#96b418;}
+
+.bar{position:absolute; border-width:0.5px; border-color:#fff;    -webkit-transform:rotate(90deg); transform:rotate(90deg); width:15%;}
+.b-one{top:192px; left:28px;}
+.b-two{top:251px; left:28px;}
+.b-three{top:311px; left:28px;}
+.b-four{top:370px; left:28px;}
+
+.header{position:absolute;top:0; left:260px;    width:1660px; height:100%; }
+/*right*/
+.right {width:1660px;  height: 100%; /* float: left;  */
+        background-size:cover; /* position:relative; */}
+
+ .r_one{background-image: url("../images/bg/bg1-1.png"); overflow:hidden;}       
+   .right-txt{float:left; width:600px; color:#fff; margin-left:230px; padding-top:100px; text-align:center; }
+   .right-txt img{margin:auto; padding-bottom:60px;}
+   .r_one h1{font-size:100px; font-weight:normal; padding-bottom:60px;}
+   .r_one p{font-size:20px; padding:50px 0; line-height:25px;}
+   .r_one .tx-dash{margin:auto; text-align:center; width:90px; height:90px; border:2px dashed #fff; box-sizing:border-box; border-radius:50%;}
+   .tx-dash .fa{cursor:pointer; font-size:105px; margin-left:18px; line-height:90px;  }
+   .r_dash{width:1px; height:400px; margin:auto; background-color:rgb(247, 247, 247);}
+   /* .tx-line{position:absolute; top:770px; left:430px;   width:18%; margin:auto; -webkit-transform:rotate(90deg); transform:rotate(90deg); } */
+   .right-img{float:left;}
+
+
+/************************/
+/**r_two**/
+/************************/
+.r_two{background-image:url("../images/bg/bground2.jpg");}
+
+/************************/
+/**r_three**/
+/************************/
+.r_three{background-image:url("../images/bg/bround3.jpg");}
+
+/************************/
+/**r_four**/
+/************************/
+.r_four{background-image:url("../images/bg/bground4.jpg");}
+
+/************************/
+/**r_five**/
+/************************/
+.r_five{background-image:url("../images/bg/bground5.jpg");}
+
