@@ -1,6 +1,6 @@
 
 body, div, ul, li, h1, h2, h3, h4, p , a, img,hr{margin:0; padding:0;}
-body{font-size:14px; font-family: 'Yeon Sung', cursive; overflow-x:hidden; }
+body{font-size:14px; font-family: 'Yeon Sung', cursive;/*  overflow-x:hidden; */ }
 .nor{font-size:14px; font-family: 'Nanum Gothic', sans-serif;}
 ul li{list-style:none;}
 a{text-decoration:none; display:block;}
@@ -88,12 +88,31 @@ h4{font-size:25px;}
 /************************/
 /**r_two**/
 /************************/
-.r_two{background-image:url("../images/bg/bground2.jpg");}
+.r_two{background-image:url("../images/bg/bground2.jpg"); position:relative; }
+.r_two img{position:absolute; bottom:50px; right:260px; }
+.two_text{width:500px; text-align:right; margin-left:450px; padding-top:245px; /*martin-top 위로 흰공간 생김*/} 
+.two_text p{color:#10622d; font-weight:800; font-size:23px; margin-bottom:50px;}
+.two_text h2{height:90px; line-height:90px;/* margin-bottom:20px;  */color:#fff; font-size:48px; text-shadow:2px 2px 2px #0e2d03;}
+.two_text h2.two_line{line-height:52px; margin-bottom:20px;}
+.two_text h2 span{display:block;}
+
+.ruler_top{position:absolute; bottom:630px; right:645px; width:46px; height:30px; 
+border-bottom:2px solid #fff; border-right:2px solid #fff; }
+.top_one{position:absolute; bottom:615px; right:628px; width:38px; height:38px; border-radius:50%;
+border:1px solid #fff;   }
+.top_one_in{width:27px; height:27px; background-color:#fff; margin:auto; border-radius:50%;
+margin-top:5px;}
+.rtwo_ruler{position:absolute; bottom:120px; right:600px; }
+.rtwo_ruler ul{position:relative; width:46px; box-sizing:border-box;border-left:2px solid #fff; border-top:2px solid #fff; /*#10622d*/}
+.rtwo_ruler li{width:23px; border-bottom:2px solid #fff; height:10px; box-sizing:border-box;}
+.rtwo_ruler li:last-child{border:none;}
+.rtwo_ruler ul:last-child{border-bottom:2px solid #fff;}
 
 /************************/
 /**r_three**/
 /************************/
 .r_three{background-image:url("../images/bg/bround3.jpg");}
+.three_box{margin:auto; width:550px; height:550px; background-color:#10622d; transform:rotate(45deg);}
 
 /************************/
 /**r_four**/
