@@ -1,20 +1,20 @@
 
 body, div, ul, li, h1, h2, h3, h4, p , a, img,hr{margin:0; padding:0;}
-body{font-size:14px; font-family: 'Yeon Sung', cursive;/*  overflow-x:hidden; */ }
+body{font-size:14px; font-family: 'Yeon Sung', cursive;  }
 .nor{font-size:14px; font-family: 'Nanum Gothic', sans-serif;}
 ul li{list-style:none;}
 a{text-decoration:none; display:block;}
 img{display:block; border:0;}
 
-body,html{height:100%;}
+body,html{/* height:100%; */ height:1080px;}
 h1{font-size:50px;}
 h2{font-size:40px;}
 h3{font-size:30px;}
 h4{font-size:25px;}
 
 /*첫번째*/
-.left{width:260px; height:100%; position:fixed; top:0; left:0;}
-.left .left-navi{float:left; width:190px; height:100%; background-color:#9ed15b; text-align:center;}
+.left{width:260px; height:100%; position:fixed; top:0; left:0; z-index:9999;}
+.left .left-navi{float:left; width:190px; height:100%; background-color:#9ed15b; text-align:center; position:relative;} 
 .left-navi img{width:100%;}
 .left-navi .logobox{width:60px; height:80px; margin:0 auto; margin-bottom:20px;}
 .left-navi h3{color:#fff; font-size:30px; font-weight:normal; padding-bottom:25px; }
@@ -26,11 +26,11 @@ h4{font-size:25px;}
 .navi li a .fa{color:#327517; font-size:15px; float:right; margin-right:10px;}
 
 
-.logo-bot{width:inherit; padding:0 10px; margin:0 auto;}
-.logo-bot a{width:160px; padding:10px 0;}
+.logo-bot{width:inherit; position:absolute; bottom:3%;}
+.logo-bot a{width:160px; padding:10px 0; margin:auto;}
 .logo-bot .bot-way{ color:#000; background-color:#fff; margin-bottom:10px;}
 .logo-bot .bot-priv{color:#fff; border:1px solid #fff; box-sizing:border-box; margin-bottom:20px;}
-.logo-bot p{text-align:left; font-size:12px;}
+.logo-bot p{text-align:center;; font-size:12px;}
  
 
 /*숫자*/
@@ -65,8 +65,10 @@ h4{font-size:25px;}
 .b-four{top:370px; left:28px;}
 
 .header{position:absolute;top:0; left:260px;    width:1660px; height:100%; }
+
+
 /*right*/
-.right {width:1660px;  height: 100%; /* float: left;  */
+.right {width:1660px; height: 1080px; /* float: left;  */
         background-size:cover; /* position:relative; */}
 
  .r_one{background-image: url("../images/bg/bg1-1.png"); /* overflow:hidden; */}       
@@ -90,7 +92,8 @@ h4{font-size:25px;}
 /************************/
 .r_two{background-image:url("../images/bg/bground2.jpg"); position:relative; }
 .r_two img{position:absolute; bottom:50px; right:260px; }
-.two_text{width:500px; text-align:right; margin-left:450px; padding-top:245px; /*martin-top 위로 흰공간 생김*/} 
+.two_text{width:500px; text-align:right;position:absolute; top:60%; left:25%;
+transform:translateY(-60%);} 
 .two_text p{color:#10622d; font-weight:800; font-size:23px; margin-bottom:50px;}
 .two_text h2{height:90px; line-height:90px;/* margin-bottom:20px;  */color:#fff; font-size:48px; text-shadow:2px 2px 2px #0e2d03;}
 .two_text h2.two_line{line-height:52px; margin-bottom:20px;}
@@ -111,16 +114,68 @@ margin-top:5px;}
 /************************/
 /**r_three**/
 /************************/
-.r_three{background-image:url("../images/bg/bround3.jpg");}
-.three_box{margin:auto; width:550px; height:550px; background-color:#10622d; transform:rotate(45deg);}
+.r_three{background-image:url("../images/bg/bround3.jpg"); position:relative;}
+.three_box{/* width:550px; height:550px; */width:34.375rem; height:34.375rem; background-color:#10622d; 
+   transform:translate(-50%,-50%) rotate(45deg) ; position:absolute; top:50%; left:50%; }
+.th_box_in{/* width:500px; height:500px;  */ width:31.25rem; height:31.25rem; border:1px solid #8dc083;
+margin-top:25px; margin-left:25px;}
+.t_box_in_text{transform:rotate(-45deg) translate(0%,-15%); color:#fff; width: 500px;
+   height: 500px;
+   text-align: center;}
+.t_box_in_text img{margin:auto; padding-bottom :10px;}
+.t_box_in_text h1{line-height:60px;}
+.t_box_in_text h1 span{ font-family: 'Yeon Sung', cursive; display:block; font-size:52px;}
+.t_box_in_text h3{padding-top:28px; font-size:19px; line-height:21px;}
+.t_box_in_text h3:before{content: ' \25A0'}
 
 /************************/
 /**r_four**/
 /************************/
-.r_four{background-image:url("../images/bg/bground4.jpg");}
+.r_four{background-image:url("../images/bg/bground4.jpg"); position:relative;}
+.four_box{width:1460px; position:absolute; top:50%; left:50%; 
+transform:translate(-50%,-50%);}
+.four_box_left{width:730px; float:left;text-align:center;}
+.four_box_left img{display:inline; }
+.four_box_left img:first-child{margin-right:20px;}
+.four_box_right{width:730px;float:left;}
+.f_b_right_one{width:365px;float:left;}
+.f_b_r_one_top{width:340px; margin:auto;
+   border-top:1px solid rgb(170, 255, 60);
+   border-bottom:1px solid rgb(170, 255, 60); text-align:center; color:#fff;
+   padding:25px 0;}
+.f_b_r_one_top h3{line-height:35px; }
+.f_b_r_one_bot{text-align:center; padding:30px 0;color:#fff; text-align:center; font-size:18px;}
+.f_b_r_one_bot p span{display:block; padding:8px 0;}
+
+.f_b_right_two{width:365px;float:left;  text-align:center; margin-top:28px;}
+.f_b_right_two div{width:270px; padding:10px 0; margin:auto; border:1px solid rgb(115,255,60); box-sizing:border-box;}
+
+.f_b_right_two ul li{padding-bottom:12px;}
+.f_b_right_two ul h5{font-size:16px; color:#fff; padding-bottom:5px;}
+.f_b_right_two ul p{font-size:12x; color:#fff; padding-bottom:5px;}
+
 
 /************************/
 /**r_five**/
 /************************/
-.r_five{background-image:url("../images/bg/bground5.jpg");}
+.r_five{background-image:url("../images/bg/bground5.jpg");
+padding:50px 0;}
+.r_five_title{width:900px; padding:20px 0; margin:auto; text-align:center;  border-top:2px solid rgb(216, 216, 216);
+border-bottom:2px solid rgb(216, 216, 216); box-sizing:border-box;}
+.r_five_title h1{color:#fff; line-height:50px; }
+.r_five_sub{width:900px; padding:20px 0; margin:auto; text-align:center;}
+.r_five_sub p{color:#000; font-size:20px; font-weight:700; line-height:25px; background-color:rgb(235, 205, 161,0.3);}
 
+.r_five_mark{width:1400px; margin:auto; padding-top:80px;}
+.r_five_mark li{float:left; width:700px; padding-bottom:40px;}
+.r_five_mark li:last-child{padding-bottom:0;}
+.r_five_mark li img{float:left; width:150px; height:150px;}
+.r_five_mark li .mark_text {float:left; width:550px;}
+.m_t_one{margin-top:32px;}
+.m_t_two{margin-top:45px;}
+.m_t_three{margin-top:32px;}
+.m_t_four{margin-top:45px;}
+.m_t_five{margin-top:22px;}
+.r_five_mark li .mark_text .mark_text_box{width:430px; margin:auto; background-color:rgba(255, 255, 255, 0.4); text-align:center; padding:10px;}
+.r_five_mark li .mark_text p.m_text_top{font-size:17px; line-height:20px; }
+.r_five_mark li .mark_text p.m_text_brown{font-size:15px; line-height:16px; color:#381809; padding-top:10px;}
